@@ -1,62 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notzero</title>
-</head>
-<body>
-    <div>
-    <h1 style="color:rgb(71, 255, 105);">Hello Nigeria</h1>
-    <p> Paragraph 1</p>
-    <p> Paragraph 2</p>
-    </div>
-</body>
-    <div>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-    </div>
-    <div>
-        <span>Span1</span>
-        <span>Span2</span>
-        <button>Button 1</button>
-        <button>Button 2</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+  </head>
+  <body>
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      method="post"
+      target="_blank"
+    >
+      <fieldset>
+        <legend>Your full name</legend>
+        <div>
+          <label>
+            First name
+            <br />
+            <input
+              type="text"
+              name="firstname"
+              value="John"
+              placeholder="Enter your first name"
+            />
+          </label>
+        </div>
         <br />
+        <div>
+          <label for="lastname">Last name</label>
+          <br />
+          <input
+            name="lastname"
+            placeholder="Enter your surname"
+            id="lastname"
+          />
+        </div>
+      </fieldset>
+      <br />
+      <div>
+        <label for="email">Email</label>
         <br />
+        <input
+          value="email@email.com"
+          type="email"
+          name="email"
+          required
+          placeholder="email@email.com"
+          id="email"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="age">Age</label>
         <br />
-        <marquee style="color:rgb(71, 148, 255);">Notzero class</marquee>
-
+        <input type="number" name="age" placeholder="Enter your age" id="age" />
+      </div>
+      <br />
+      <div>
+        <label for="phone_number">Phone number</label>
         <br />
+        <input
+          type="tel"
+          name="phone_number"
+          placeholder="e.g 070323483838"
+          id="phone_number"
+        />
+      </div>
+      <br />
+      <div>
+        <label for="dob">Date of birth</label>
         <br />
-
-        <strong>Strong Texts</strong>
-
+        <input required type="date" name="dob" id="dob" />
+      </div>
+      <br />
+      <div>
+        <input name="gender" type="radio" id="male" />
+        <label for="male">Male</label>
         <br />
-        <p><em> Emphasized text</em></p>
-        <p><i>Italic</i></p>
-
-        <img 
-            src="./assets/images/image.jpg"
-            alt="Lifestyle image"
-            width="200"
-            height="200"
-
-        <p><address>Address</address></p>
-        <a href="https://google.com">Google</a>
-        <a href="https://facebook.com">Facebook</a>
-        <a href="mailto:email@email.com">Send to Mail</a>
-        <a href="tel:07079150814">Send to Phone</a>
-        <p><abbr title="United State of America">USA</abbr></p>
-
-        
-
-
-        
-
-    </div>
-
-
+        <input name="gender" type="radio" id="female" />
+        <label for="female">Female</label>
+      </div>
+      <br />
+      <div>
+        <input name="terms" type="checkbox" id="terms" />
+        <label for="terms">Accept terms and condition</label>
+      </div>
+      <br />
+      <br />
+      <div>
+        <label for="bio">Biography</label>
+        <br />
+        <textarea
+          rows="10"
+          cols="40"
+          placeholder="Enter your biography"
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="level">Level of education</label>
+        <br />
+        <select name="level" id="level">
+          <option value="">Select education level</option>
+          <optgroup label="Level 1">
+            <option value="ssce">SSCE</option>
+          </optgroup>
+          <optgroup label="Level 2">
+            <option value="nd">National Diploma</option>
+            <option value="nce">NCE</option>
+          </optgroup>
+          <optgroup label="Level 3">
+            <option value="hnd">Higher National Diploma</option>
+            <option value="bsc">BSc</option>
+          </optgroup>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="resume">Upload your resume</label>
+        <br />
+        <input type="file" name="resume" id="resume" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <br />
+        <input
+          required
+          type="password"
+          name="password"
+          id="password"
+          placeholder="**********"
+        />
+      </div>
+      <input type="color" />
+      <input type="hidden" value="hidden-key" />
+      <input type="range" value="50" />
+      <input type="reset" />
+      <input type="url" />
+      <input placeholder="e.g. Nigeria" list="country" />
+      <datalist id="country">
+        <option>Nigeria</option>
+        <option>USA</option>
+        <option>Canada</option>
+      </datalist>
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
 </html>

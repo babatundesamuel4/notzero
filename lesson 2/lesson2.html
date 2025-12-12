@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML Table</title>
+        <style>
+            table {
+                width: 100%;
+            }
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                padding: 8px;
+                text-align: center;
+            }
+            th {
+                text-transform: uppercase;
+            }
+            td {
+                font-weight: 800;
+                font-size: 24px;
+            }
+            .cal tbody tr:nth-child(odd) {
+                background-color: #eee;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="cal">
+            <thead>
+                <tr><th colspan="7">DECEMBER 2025</th></tr>
+                <tr>
+                    <th>Sunday</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Saturday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td style="background-color: red; color: white">11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="7">This is December calendar</td>
+            </tfoot>
+        </table>
+        <br />
+        <table>
+            <caption>Side Heading</caption>
+            <colgroup>
+                <col />
+                <col style="background-color: #eee;" />
+                <col />
+                <col style="background-color: #eee;" />
+            </colgroup>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Morning</th>
+                    <th>Afternoon</th>
+                    <th>Evening</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Monday</th>
+                    <td>COM 111</td>
+                    <td>GNS 010</td>
+                    <td>LIB 111</td>
+                </tr>
+                <tr>
+                    <th>Tuesday</th>
+                    <td>COM 211</td>
+                    <td>CS 100</td>
+                    <td>Mat 125</td>
+                </tr>
+                </tr>
+                <tr>
+                    <th>Wednesday</th>
+                    <td>COM 111</td>
+                    <td>GNS 010</td>
+                    <td>LIB 111</td>
+                </tr>
+                <tr>
+                    <th>Thursday</th>
+                    <td>CHE 281</td>
+                    <td>MCH 100</td>
+                    <td>STA 211</td>
+                </tr>
+                <tr>
+                    <th>Friday</th>
+                    <td>COM 211</td>
+                    <td>CS 100</td>
+                    <td>Mat 125</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <table>
+            <caption>Colspan</caption>
+            <thead>
+                <tr>
+                    <th colspan="2">Name</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>33</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>33</td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+        <table>
+            <caption>Rowspan</caption>
+            <tbody>
+                <tr>
+                    <th rowspan="2">Name</th>
+                    <td>John</td>
+                    <td>James</td>
+                </tr>
+                <tr>
+                    <td>Doe</td>
+                    <td>Dan</td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>33</td>
+                    <td>90</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

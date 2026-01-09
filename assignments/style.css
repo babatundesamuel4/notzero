@@ -1,0 +1,92 @@
+@@ -0,0 +1,91 @@
+@font-face {
+    font-family: Custom;
+    src: url('./fonts/CustomFont.ttf');
+}
+
+html {
+     font-family: "Rubik", sans-serif;
+}
+
+h1 {
+    color: #dc0000;
+    font-family: 'Arial', Times, serif;
+    font-weight: 800;
+}
+
+.header {
+    color: hsl(218, 81%, 39%);
+    text-decoration: underline 1px double;
+}
+
+#sub-header {
+    color: blue;
+}
+
+.parent > p {
+    color: blueviolet;
+}
+
+.parent span {
+    color: burlywood;
+}
+
+h1, p, span {
+    font-size: 25px;
+}
+
+.sibling-1 + p {
+    color: blue;
+}
+
+.sibling-1:hover {
+    color: red;
+    font-size: 30px;
+}
+
+a:link {
+    color: aqua;
+}
+
+a:visited {
+    color: red;
+}
+
+li::marker {
+    color: blue;
+}
+
+.sub p::before {
+    content: "<<";
+}
+
+.sub p::after {
+    content: ">>";
+    color: red;
+}
+
+/* p:last-child {
+    color: blue;
+} */
+
+ul[role=list] {
+    background-color: red;
+}
+
+input:focus {
+    background-color: red;
+    padding: 10px;
+}
+
+.box {
+    /* width: 600px; */
+    background-color: red;
+    margin: 20px;
+    padding: 30px;
+    border: 20px solid blue;
+}
+
+.box p {
+    text-align: justify;
+    margin: 0;
+}

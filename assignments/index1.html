@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Beginner Example</title>
+  </head>
+  <body>
+    <h1>Welcome 👋</h1>
+    <p>Click the button to see JavaScript in action.</p>
+
+    <button onclick="greetUser()">Click Me</button>
+
+    <script>
+      function greetUser() {
+        let name = prompt("What is your name?");
+        let birthYear = prompt("What year were you born?");
+
+        let currentYear = new Date().getFullYear();
+        let age = currentYear - Number(birthYear);
+
+        alert("Hello " + name + "! You are " + age + " years old.");
+      }
+    </script>
+  </body>
+</html>
